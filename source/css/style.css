@@ -378,58 +378,19 @@ th {
 }
 
 @font-face {
-  font-family: "Pretendard";
-  font-weight: 900;
-  font-display: swap;
-  src: local("Pretendard Black"), url("../font/woff2/Pretendard-Black.woff2") format("woff2"), url("../font/woff/Pretendard-Black.woff") format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 800;
-  font-display: swap;
-  src: local("Pretendard ExtraBold"), url("../font/woff2/Pretendard-ExtraBold.woff2") format("woff2"), url("../font/woff/Pretendard-ExtraBold.woff") format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 700;
-  font-display: swap;
-  src: local("Pretendard Bold"), url("../font/woff2/Pretendard-Bold.woff2") format("woff2"), url("../font/woff/Pretendard-Bold.woff") format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
+  font-family: "SBAggro";
+  src: url("../font/SBAggroB.woff") format("woff");
   font-weight: 600;
-  font-display: swap;
-  src: local("Pretendard SemiBold"), url("../font/woff2/Pretendard-SemiBold.woff2") format("woff2"), url("../font/woff/Pretendard-SemiBold.woff") format("woff");
 }
 @font-face {
-  font-family: "Pretendard";
-  font-weight: 500;
-  font-display: swap;
-  src: local("Pretendard Medium"), url("../font/woff2/Pretendard-Medium.woff2") format("woff2"), url("../font/woff/Pretendard-Medium.woff") format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
+  font-family: "SBAggro";
+  src: url("../font/SBAggroM.woff") format("woff");
   font-weight: 400;
-  font-display: swap;
-  src: local("Pretendard Regular"), url("../font/woff2/Pretendard-Regular.woff2") format("woff2"), url("../font/woff/Pretendard-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: "Pretendard";
-  font-weight: 300;
-  font-display: swap;
-  src: local("Pretendard Light"), url("../font/woff2/Pretendard-Light.woff2") format("woff2"), url("../font/woff/Pretendard-Light.woff") format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
+  font-family: "SBAggro";
+  src: url("../font/SBAggroL.woff") format("woff");
   font-weight: 200;
-  font-display: swap;
-  src: local("Pretendard ExtraLight"), url("../font/woff2/Pretendard-ExtraLight.woff2") format("woff2"), url("../font/woff/Pretendard-ExtraLight.woff") format("woff");
-}
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 100;
-  font-display: swap;
-  src: local("Pretendard Thin"), url("../font/woff2/Pretendard-Thin.woff2") format("woff2"), url("../font/woff/Pretendard-Thin.woff") format("woff");
 }
 div#content.sub01 div.sub-head {
   background: #74C8FF;
@@ -534,7 +495,7 @@ html {
 
 html,
 body {
-  font-family: "Pretendard", "Malgun Gothic", "apple sd gothic neo", sans-serif;
+  font-family: "SBAggro", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 }
 
 body {
@@ -750,9 +711,10 @@ body div.form fieldset a.active {
   background: url(../images/button-on.jpg) no-repeat center/100% auto;
 }
 body div.form div.result {
+  position: relative;
   width: 290px;
-  height: auto;
   margin: 0 auto;
+  background: url(../images/result-img.jpg) no-repeat center top/100% auto;
 }
 @media (min-width: 800px) {
   body div.form div.result {
@@ -764,19 +726,61 @@ body div.form div.result {
     width: 770px;
   }
 }
-body div.form div.result img {
-  width: 100%;
-  max-width: 770px;
-  margin: 0 0 26px;
+body div.form div.result p {
+  position: absolute;
+  left: 102px;
+  top: 207px;
+  width: 142px;
+  font-weight: 200;
+  font-size: 9px;
+  letter-spacing: -1px;
+  margin: 0;
 }
 @media (min-width: 800px) {
-  body div.form div.result img {
-    margin: 0 0 40px;
+  body div.form div.result p {
+    left: 135px;
+    top: 279px;
+    width: 190px;
+    font-size: 11px;
+    letter-spacing: 0;
   }
 }
 @media (min-width: 2200px) {
-  body div.form div.result img {
-    margin: 0 0 80px;
+  body div.form div.result p {
+    left: 269px;
+    top: 554px;
+    width: 380px;
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+}
+body div.form div.result span {
+  padding-left: 4px;
+}
+@media (min-width: 800px) {
+  body div.form div.result span {
+    padding-left: 6px;
+  }
+}
+@media (min-width: 2200px) {
+  body div.form div.result span {
+    padding-left: 12px;
+  }
+}
+body div.form div.result span strong {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+@media (min-width: 800px) {
+  body div.form div.result span strong {
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 2200px) {
+  body div.form div.result span strong {
+    font-size: 22px;
+    letter-spacing: 4px;
   }
 }
 body div.form div.result button,
@@ -786,12 +790,14 @@ body div.form div.result a {
   height: 51px;
   border: none;
   background: url(../images/download.jpg) no-repeat center/100% auto;
+  margin: 316px 0 0;
 }
 @media (min-width: 800px) {
   body div.form div.result button,
   body div.form div.result a {
     width: 385px;
     height: 68px;
+    margin: 425px 0 0;
   }
 }
 @media (min-width: 2200px) {
@@ -799,6 +805,7 @@ body div.form div.result a {
   body div.form div.result a {
     width: 770px;
     height: 136px;
+    margin: 850px 0 0;
   }
 }
 body div.form div.result button:hover, body div.form div.result button.active,
@@ -874,7 +881,7 @@ body div.info {
   }
 }
 body div.step {
-  background: url(../images/background-bottom.jpg) no-repeat #badfe5 center top/1000px auto;
+  background: url(../images/re_background-bottom.jpg) no-repeat #badfe5 center top/1000px auto;
   font-size: 0;
   padding: 132px 0 40px;
 }

@@ -262,9 +262,11 @@ body {
     }
 
     div.result {
+      position:relative;
       width:290px;
-      height:auto;
       margin:0 auto;
+      background:url(../images/result-img.jpg) no-repeat center top / 100% auto;
+
 
       @media (min-width: 800px) {
         width:385px;
@@ -274,17 +276,60 @@ body {
         width:770px;
       }
 
-      img {
-        width:100%;
-        max-width:770px;
-        margin:0 0 26px;
-
+      p {
+        position:absolute;
+        left:102px;
+        top:207px;
+        width:142px;
+        font-weight:200;
+        font-size:9px;
+        letter-spacing:-1px;
+        margin:0;
         @media (min-width: 800px) {
-          margin:0 0 40px;
+          left:135px;
+          top:279px;
+          width:190px;
+          font-size:11px;
+          letter-spacing:0;
         }
   
         @media (min-width: 2200px) {
-          margin:0 0 80px;
+          left:269px;
+          top:554px;
+          width:380px;
+          font-size:22px;
+          letter-spacing:0;
+          
+        }
+      }
+      
+      span {
+        padding-left:4px;
+  
+        @media (min-width: 800px) {
+          padding-left:6px;
+        }
+  
+        @media (min-width: 2200px) {
+          padding-left:12px;
+          
+        }
+  
+
+        strong {
+          font-weight:400;
+          letter-spacing:1px;
+  
+          @media (min-width: 800px) {
+            font-size:11px;
+            letter-spacing:2px;
+          }
+    
+          @media (min-width: 2200px) {
+            font-size:22px;
+            letter-spacing:4px;
+            
+          }
         }
       }
 
@@ -295,15 +340,18 @@ body {
         height:51px;
         border:none;
         background:url(../images/download.jpg) no-repeat center / 100% auto;
+        margin:316px 0 0;
 
         @media (min-width: 800px) {
           width:385px;
           height:68px;
+          margin:425px 0 0;
         }
   
         @media (min-width: 2200px) {
           width:770px;
           height:136px;
+          margin:850px 0 0;
         }
 
         &:hover,
@@ -388,7 +436,7 @@ body {
   }
 
   div.step {
-    background:url(../images/background-bottom.jpg) no-repeat #badfe5 center top  / 1000px auto;
+    background:url(../images/re_background-bottom.jpg) no-repeat #badfe5 center top  / 1000px auto;
     font-size:0;
     padding:132px 0 40px; 
 
