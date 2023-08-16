@@ -712,7 +712,6 @@ body div.form div.result {
   position: relative;
   width: 290px;
   margin: 0 auto;
-  background: url(../images/result-img.jpg) no-repeat center top/100% auto;
 }
 @media (min-width: 800px) {
   body div.form div.result {
@@ -724,7 +723,24 @@ body div.form div.result {
     width: 770px;
   }
 }
-body div.form div.result p {
+body div.form div.result div.result-img {
+  width: 290px;
+  height: 290px;
+  background: url(../images/result-img.jpg) no-repeat center top/100% auto;
+}
+@media (min-width: 800px) {
+  body div.form div.result div.result-img {
+    width: 385px;
+    height: 385px;
+  }
+}
+@media (min-width: 2200px) {
+  body div.form div.result div.result-img {
+    width: 770px;
+    height: 770px;
+  }
+}
+body div.form div.result div.result-img p {
   position: absolute;
   left: 102px;
   top: 207px;
@@ -735,7 +751,7 @@ body div.form div.result p {
   margin: 0;
 }
 @media (min-width: 800px) {
-  body div.form div.result p {
+  body div.form div.result div.result-img p {
     left: 135px;
     top: 279px;
     width: 190px;
@@ -744,7 +760,7 @@ body div.form div.result p {
   }
 }
 @media (min-width: 2200px) {
-  body div.form div.result p {
+  body div.form div.result div.result-img p {
     left: 269px;
     top: 554px;
     width: 380px;
@@ -752,31 +768,31 @@ body div.form div.result p {
     letter-spacing: 0;
   }
 }
-body div.form div.result span {
+body div.form div.result div.result-img span {
   padding-left: 4px;
 }
 @media (min-width: 800px) {
-  body div.form div.result span {
+  body div.form div.result div.result-img span {
     padding-left: 6px;
   }
 }
 @media (min-width: 2200px) {
-  body div.form div.result span {
+  body div.form div.result div.result-img span {
     padding-left: 12px;
   }
 }
-body div.form div.result span strong {
+body div.form div.result div.result-img span strong {
   font-weight: 400;
   letter-spacing: 1px;
 }
 @media (min-width: 800px) {
-  body div.form div.result span strong {
+  body div.form div.result div.result-img span strong {
     font-size: 11px;
     letter-spacing: 2px;
   }
 }
 @media (min-width: 2200px) {
-  body div.form div.result span strong {
+  body div.form div.result div.result-img span strong {
     font-size: 22px;
     letter-spacing: 4px;
   }
@@ -788,14 +804,14 @@ body div.form div.result a {
   height: 51px;
   border: none;
   background: url(../images/download.jpg) no-repeat center/100% auto;
-  margin: 316px 0 0;
+  margin: 26px 0 0;
 }
 @media (min-width: 800px) {
   body div.form div.result button,
   body div.form div.result a {
     width: 385px;
     height: 68px;
-    margin: 425px 0 0;
+    margin: 40px 0 0;
   }
 }
 @media (min-width: 2200px) {
@@ -803,7 +819,7 @@ body div.form div.result a {
   body div.form div.result a {
     width: 770px;
     height: 136px;
-    margin: 850px 0 0;
+    margin: 80px 0 0;
   }
 }
 body div.form div.result button:hover, body div.form div.result button.active,
