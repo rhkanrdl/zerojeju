@@ -527,7 +527,6 @@ body div.outline {
 body header h1 {
   width: 290px;
   height: 110px;
-  background: url(../images/title.png) no-repeat center/100% auto;
   margin: 160px auto 440px;
 }
 @media (min-width: 800px) {
@@ -742,28 +741,26 @@ body div.form div.result div.result-img {
 }
 body div.form div.result div.result-img p {
   position: absolute;
-  left: 102px;
+  left: 92px;
   top: 207px;
-  width: 142px;
+  width: 154px;
   font-weight: 200;
   font-size: 9px;
-  letter-spacing: -1px;
   margin: 0;
 }
 @media (min-width: 800px) {
   body div.form div.result div.result-img p {
-    left: 135px;
+    left: 122px;
     top: 279px;
-    width: 190px;
+    width: 202px;
     font-size: 11px;
-    letter-spacing: 0;
   }
 }
 @media (min-width: 2200px) {
   body div.form div.result div.result-img p {
-    left: 269px;
+    left: 244px;
     top: 554px;
-    width: 380px;
+    width: 404px;
     font-size: 22px;
     letter-spacing: 0;
   }
@@ -821,11 +818,6 @@ body div.form div.result a {
     height: 136px;
     margin: 80px 0 0;
   }
-}
-body div.form div.result button:hover, body div.form div.result button.active,
-body div.form div.result a:hover,
-body div.form div.result a.active {
-  background: url(../images/download-on.jpg) no-repeat center/100% auto;
 }
 body div.form div.counter {
   position: relative;
