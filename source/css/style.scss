@@ -301,16 +301,15 @@ body {
           @media (min-width: 800px) {
             left:122px;
             top:279px;
-            width:202px;
+            width:192px;
             font-size:11px;
           }
     
           @media (min-width: 2200px) {
             left:244px;
             top:554px;
-            width:404px;
+            width:384px;
             font-size:22px;
-            letter-spacing:0;
             
           }
         }
@@ -319,7 +318,7 @@ body {
           padding-left:4px;
     
           @media (min-width: 800px) {
-            padding-left:6px;
+            padding-left:10px;
           }
     
           @media (min-width: 2200px) {
@@ -329,17 +328,17 @@ body {
     
   
           strong {
-            font-weight:400;
-            letter-spacing:1px;
+            font-weight:600;
+            // letter-spacing:1px;
     
             @media (min-width: 800px) {
               font-size:11px;
-              letter-spacing:2px;
+              // letter-spacing:2px;
             }
       
             @media (min-width: 2200px) {
               font-size:22px;
-              letter-spacing:4px;
+              // letter-spacing:4px;
               
             }
           }
@@ -429,42 +428,45 @@ body {
       
     }
   }
-
-  div.info {
-    width:290px;
-    height:226px;
-    background:url(../images/event-info.jpg) no-repeat center / 100% auto;
-    margin:0 auto 64px;
-
-    @media (min-width: 800px) {
-      width:385px;
-      height:300px;
-      margin:0 auto 96px;
-    }
-
-    @media (min-width: 2200px) {
-      width:770px;
-      height:600px;
-      margin:0 auto 192px;
-    }
-  }
-
   div.step {
-    background:url(../images/re_background-bottom.jpg) no-repeat #badfe5 center top  / 1000px auto;
+    background:url(../images/re_background-bottom.jpg) no-repeat center top 200px  / 1000px auto;
     font-size:0;
-    padding:132px 0 40px; 
+    padding:0 0 40px; 
 
     @media (min-width: 800px) {
       background-size:1200px auto;
-      padding:200px 0 60px; 
+      background-position:center top 260px;
+      padding:0 0 60px; 
     }
 
     @media (min-width: 2200px) {
       max-width:2200px;
       background-size:2200px auto;
-      padding:400px 0 80px; 
+      background-position:center top 520px;
+      padding:0 0 80px; 
     }
 
+
+    div.info {
+      width:290px;
+      height:226px;
+      background:url(../images/event-info.jpg) no-repeat center / 100% auto;
+      margin:0 auto 100px;
+  
+      @media (min-width: 800px) {
+        width:385px;
+        height:300px;
+        margin:0 auto 140px;
+      }
+  
+      @media (min-width: 2200px) {
+        width:770px;
+        height:600px;
+        margin:0 auto 280px;
+      }
+    }
+
+    
     div.step1 {
       position:relative;
       margin:0 auto;
