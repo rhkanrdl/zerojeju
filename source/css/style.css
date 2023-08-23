@@ -742,7 +742,7 @@ body div.form div.result div.result-img {
 body div.form div.result div.result-img p {
   position: absolute;
   left: 92px;
-  top: 207px;
+  top: 208px;
   width: 154px;
   font-weight: 200;
   font-size: 9px;
@@ -751,7 +751,7 @@ body div.form div.result div.result-img p {
 @media (min-width: 800px) {
   body div.form div.result div.result-img p {
     left: 122px;
-    top: 279px;
+    top: 278px;
     width: 192px;
     font-size: 11px;
   }
@@ -759,7 +759,7 @@ body div.form div.result div.result-img p {
 @media (min-width: 2200px) {
   body div.form div.result div.result-img p {
     left: 244px;
-    top: 554px;
+    top: 556px;
     width: 384px;
     font-size: 22px;
   }
